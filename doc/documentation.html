@@ -1,0 +1,469 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>
+Pierogi UIRC
+</title>
+</head>
+<body>
+
+<h1>Pierogi Documentation</h1>
+
+<p>
+The Pierogi universal infrared remote controller is a single self-contained
+app capable of sending IR commands to a wide variety of devices.
+</p>
+
+<p>
+In this app, each family of related infrared commands is collected into a
+"keyset".  As manufacturers commonly reuse a given set of commands rather
+than re-invent the wheel each time they come out with a new product, many
+devices can share the same keyset.
+</p>
+
+<p>
+Pierogi also follows the classic concept of a universal remote, by having
+a common set of buttons that are reused for each device.  So, for example,
+the "power" button has the same name and is located in the same position on the screen, no matter what keyset is currently in use -- even if that keyset has a
+different name for "power", or has no "power" command at all.
+</p>
+
+<p>
+So in short, to use Pierogi you first select an appropriate keyset, then
+press the appropriate buttons to control the target device.  More detail on
+the features of Pierogi is provided below.
+</p>
+
+<h2>Using Pierogi</h2>
+
+<p>
+The main Pierogi interface displays a collection of control panels, with
+each panel containing a group of related buttons.  Depending on the keyset
+chosen, the selection of control panels will vary, and some buttons will not
+be active.  This is by design; the panels are shared between keysets, and
+not every button will be used by each keyset.
+</p>
+
+<p>
+Pressing an active button will transmit the associated command, and in most
+cases will continue to repeat that command for as long as that button is
+pressed.  (This is useful, for example, in modifying the volume on a TV set.)
+</p>
+
+<h3>Selecting a Keyset</h3>
+
+<p>
+To choose a keyset, go to the drop-down menu and choose "Select Keyset from
+List".  A (large) list will be presented; these are the names of all the
+keysets available in Pierogi.  A given keyset can often be used with multiple
+models of device, so keysets are arranged by the make (or brand) and type
+of device they control.
+</p>
+
+<p>
+If you know the make of your device, you can select it from the "Filter by
+Make" control at the top of the screen, to simplify the list.
+Alternatively, you can type a search string in on the keyboard to find a
+particular keyset.
+</p>
+
+<p>
+Once you find a keyset you're interested in, select it to bring up it's
+"Keyset Settings" panel.  From there, you can choose to make it a "favorite"
+keyset, and give it a nickname (such as "Living Room TV" or "John's Mac
+Mini").  When finished with the settings, click "done", and Pierogi will
+immediately start using this keyset.  You can then close this screen.
+</p>
+
+<h3>An Alternative Way to Select a Keyset</h3>
+
+<p>
+If you are unsure what keyset to choose for your device, you can let Pierogi
+run through its entire database of keysets to try to find a match.  To do
+this, select "Automated Keyset Search" from the drop-down menu.  This will
+bring up a window with a wide array of controls; however, the most important
+controls are the two at the bottom, "Start Automatic Search" and "Pause /
+Continue Search".
+</p>
+
+<p>
+The automatic search mechanism will send the "Power On/Off" command for each
+available keyset.  So, to use this, you should point your N900 at the target
+device, press "Start Automatic Search", and wait to see if the device powers
+on (or off, if it is already on).  This may take some time, as Pierogi has
+a large database of keysets.
+</p>
+
+<p>
+If the device does switch on or off, you can then hit the "Pause / Continue"
+button to stop Pierogi.  The name of the keyset at the top of the screen
+may be one that works with your device; however, if Pierogi had already gone
+on to another keyset by the time "Pause" was pressed, you can use the "Prev
+Set" button to go back to the previous keyset and see if it is compatible.
+(The "Prev Set" and "Next Set" buttons allow you check keysets one by one,
+and the "Reverse" and "Fast Forward" keys let you move through the database
+more quickly.)
+</p>
+
+<p>
+When you have found a keyset you are interested in, you can press the "Edit
+Keyset" button to make it a favorite, or give it a nickname.
+</p>
+
+<p>
+When you exit this screen, the most recent keyset in the search becomes
+Pierogi's active keyset.
+</p>
+
+<h3>Favorite Keysets</h3>
+
+<p>
+If you have a keyset that you would like to use regularly,
+you can make it a favorite by checking a box in the keyset's settings.
+Pierogi will collect all the favorite keysets into a list, which you can
+access from the drop-down menu by selecting "Favorite Keysets".
+</p>
+
+<p>
+You can also quickly navigate through the list of favorites by using the
+volume-rocker keys on the top of the N900.  Pressing the left rocker key
+will move backwards through the list, and the right key will move forwards.
+</p>
+
+<h3>Main Window</h3>
+
+<p>
+Pierogi does not attempt to place all the remote control buttons on the
+screen at one time; instead, a collection of "control panels" are displayed
+one at a time, each containing a few related controls.  The collection of
+panels will change based upon the keyset selected; some keysets will only
+need one or two panels to represent all of their controls, while others may
+require as many as seven or eight.
+</p>
+
+<p>
+The main window shows the currently selected panel, as well as a "tab bar"
+above that panel.  Pressing one of the labels on the tab bar will select
+the control panel associated with that label.  When there are many tabs,
+the tab bar will not be able to display all their labels at once; when this
+happens, you can "drag" the tab bar left or right to reach tabs that are off
+the screen.
+</p>
+
+<p>
+Some of the most common panels are described below:
+</p>
+
+<h4>Main Panel</h4>
+
+<p>The Main panel contains just the power, volume, mute, and channel buttons.
+It is intended to be a quick way to get to the most important, commonly used
+controls for a video or audio device.  The name of the current keyset is also
+provided in this panel.</p>
+
+<h4>Utility Panel</h4>
+
+<p>
+The Utility panel contains a selection of useful controls, such as
+"Sleep", "Input", "Closed Captions / Subtitles", and the color buttons.
+This panel is intended to be a quick way to reach frequently used
+buttons; as such, the selection may be updated in future versions of Pierogi.
+</p>
+
+<h4>Keypad Panel</h4>
+
+<p>
+This panel provides a numeric keypad and a handful of associated commands.
+The "Prev Channel" button should
+take you to the previously selected channel, if any.  The "Dash" button
+should allow you to specify a digital subchannel, as in "16-4".  The "+100"
+button is used for television sets which normally expect only two digits
+per channel; using this button allows you to enter a third digit.  The "-/--
+Double Digit" button is used on very old televisions that normally expect
+channels to be represented by just a single digit; pressing this should
+allow you to enter a second digit.
+</p>
+
+<h4>Menu Panel</h4>
+
+<p>
+This panel contains buttons used to enter and exit a menu, navigate within
+a menu, and select menu entries.  The "Menu" button is meant to enter the
+main system menu of a given device; "Guide" is a content-related menu available
+on many modern devices; and "Disc Menu" is used to access the menu interface
+provided with DVD and Blu-Ray media.
+</p>
+
+<h4>Media Panel</h4>
+
+<p>
+Many of the most important playback commands are represented on this panel.
+"Play", "Pause", and "Stop" are the most common ones, along with "Reverse"
+(also called Rewind) and "Fast Forward".  A variety of other less common
+navigation controls are included, along with the "Eject" command.
+</p>
+
+<h4>Input Panel</h4>
+
+<p>
+The Input panel has an unusual pair of controls at the bottom, to allow
+selecting a specific input from a potentially large list.  To use these
+controls, first select the input you are interested in from the bottom
+right control, then press the "Change Input To:" button to actually change
+the input.
+</p>
+
+<p>
+Above these two controls are buttons for a handful of commonly used
+inputs.  These are intended as a simpler way to change the input than
+the two-step process at the bottom.
+</p>
+
+<h2>Pierogi Settings</h2>
+
+<p>
+From the drop-down menu, the option "Preferences" will take you to a screen
+where a variety of aspects of Pierogi can be modified.  You may need to
+scroll this screen up or down to reach all the settings.  The options are
+described in more detail below:
+</p>
+
+<h3>Volume Punch Through</h3>
+
+<p>
+At the top of the screen, you can choose a default keyset.  You can use this
+keyset to override certain controls in the currently active keyset.  For now,
+the only way that the default keyset is being used is for a concept known
+as "Volume Punch Through".  When you choose a default keyset, and then select
+the "Always use default keyset for volume controls", Pierogi will do just
+that: no matter what keyset you select, the default keyset will be used when
+you press the volume up, volume down, or mute buttons.
+</p>
+
+<p>
+This is mainly of use when controlling devices connected to a television
+set; for example, you could be using Pierogi to control a blu-ray player,
+yet still control the TV's volume using the TV's keyset.
+</p>
+
+<h3>Reverse orientation of volume and channel controls</h3>
+
+<p>
+Pierogi's Main Panel is set up in a manner that mimics a section of many
+TV remote controls, with a pair of volume controls arranged vertically on
+one side and a pair of channel controls on the other.  However, some
+remotes have the volume controls on the left and the channel controls on the
+right, and others are the opposite.  If you are more comfortable with having
+the volume on the left, this switch will do that for you.
+</p>
+
+<h3>Place Tab Bar below Button Panels</h3>
+
+<p>
+Selecting this switch will place the scrollable tab bar beneath the control
+panels.  This can be of use, for example, to avoid selecting the menu bar
+by mistake when pressing tabs.  It can also make it easier to control the
+tab bar with your thumbs.
+</p>
+
+<h2>Design Rationale</h2>
+
+<p>Here I collect my thoughts on the how and why of creating Pierogi.</p>
+
+<h3>Hasn't this been done before?</h3>
+
+<p>Yes, remote control software has already been written for the N900.  In
+particular, the
+<a href="http://irreco.garage.maemo.org/">Irreco / QtIrreco</a> project
+creates beautiful virtual remote controls.  I've also used the
+<a href="http://thp.io/2010/raemote/">Raemote</a> widget to control my Apple
+computers.  But these programs have their shortcomings; in particular, they
+are not universal.  Each simulated remote control in QtIrreco is a completely
+separate animal.  I would like to have a standard set of buttons that I can
+use on all sorts of different hardware.</p>
+
+<h3>What's up with LIRC?</h3>
+
+<p>Just as QtIrreco and Raemote do, I want to leverage the work of the 
+<a href="http://www.lirc.org/">Linux Infrared Remote Control</a> project.
+The LIRC project is by far the most influential open-source effort working
+with consumer IR.  And the N900 comes with a device driver made
+specifically for their server!  But, you see, I have a problem.  I
+don't want to do things the way LIRC wants to do things.</p>
+
+<p>The N900 is different from other Linux systems using IR -- rather than
+being the machine at which you point a remote control, this machine <i>is</i>
+the remote control.  This is not what LIRC was designed for; the heart of the
+LIRC project is a server that will sit and wait for messages to arrive from
+the IR system.  Although it can also broadcast IR data back out (when using
+hardware that supports 2-way IR communication), that is not its primary
+purpose.</p>
+
+<p>I believe there are three disadvantages to using the LIRC server as it
+currently exists.  First, there isn't much point to running a daemon on
+the N900 to manage the IR device; no messages are ever going to come in from
+the output-only hardware on the N900, so why sit and listen for them?</p>
+
+<p>The second problem is somewhat larger.  LIRC uses configuration files to
+describe the command set for each remote control.  And there are a lot of them.
+A whole lot.  We're talking thousands of files here, and each file can describe
+many remote controls.  This is not a problem for Raemote or Irreco, as they
+only need to deal with one config file at a time.  But if you're aiming to
+manage the whole lot of them, you need to find a way to deal with the
+multitudes.</p>
+
+<p>The third problem is more subtle, but really tough to crack.  You see, the
+whole point of LIRC is to take the commands it receives from the IR port and
+translate them into something recognizable.  As such, each config file provides
+a mapping from numeric commands to human-readable strings.  This is a
+serious problem, if your interest is in finding similar commands in
+different config files!  Take, for example, the "power"
+button found on most remote controls.  In some config files, the string for
+this is "power".  Others have "Power", or "POWER".  You can also find "pwr",
+"PWR", "ON/OFF", "ON-OFF", "ONOFF", "POWER_ON_OFF", "KEY_POWER", "Operate",
+"Standby", and who knows what else.  And, you've gotta be careful not to get
+confused by strings like "SUBTITLE_ON/OFF" or "TV_ON_TIMER".  How is an app to
+know which key to map all these strings to?</p>
+
+<h3>So how is Pierogi different?</h3>
+
+<p>
+Pierogi attempts to answer these problems.  First, it talks directly to the
+/dev/lirc0 device, no server middleman needed.  Yes, you can use Pierogi
+without the LIRC daemon running; in fact, there's no need to ever install it.
+Second, Pierogi is built
+around the concept of the "keyset"; all IR codes that can share the same
+protocol without interfering with one another are combined into a single
+family of related commands.  In short, this reduces the quantity of data
+available from LIRC config files to something much more manageable.</p>
+ 
+<p>The third problem mentioned above is a bit harder to solve; I'm currently
+mapping each LIRC string to a corresponding Pierogi key by hand.  Naturally,
+this process will be fraught with errors; I intend to keep updating Pierogi
+as these errors are found and fixed.
+</p>
+
+<h2>Internal Design Notes</h2>
+
+<p>If you're interested in the ugly details of the code, read on!</p>
+
+<h3>What's up with the name of this app?</h3>
+
+<p>Lately I've been naming my projects after tasty foods.  In particular,
+I've been working my way through the pasta-oriented dishes.  (My previous
+project, "Linguine", has gotten bogged down, so I moved on to this one...)</p>
+
+<h3>Why use Qt?</h3>
+
+<p>I'm a C++ kind of guy, it just makes sense to me to use a C++ kind of
+interface.  The Qt classes have everything you need to set up a decent UI,
+and Qt Creator makes coding up a project for the N900 relatively
+painless.  Check it out for yourself at
+<a href="http://qt.nokia.com/">the Qt webpage</a>.
+</p>
+
+<h3>The simplest device ever!</h3>
+
+<p>If you ever wanted to learn how to work with device drivers on Linux, the
+N900's infrared port is the device you want to start with.  It's not 
+much more than a flashlight: You turn it on.  You turn it off.  You turn it on
+again.  You turn it off again.  You really can't get much simpler than that.
+Interaction with the "/dev/lirc0" device involves no more than handing
+it an array of integers: the first integer being an amount of time to keep the
+light lit (in microseconds), the second being an amount of time to leave it
+switched off, the third on, the fourth off, and so on.</p>
+
+<p>Well, ok, so it involves just a little bit more than that.  You don't want
+to leave the light stuck in the "on" state when you are finished, so the driver
+demands that the last item in every array be an "on" amount -- after finishing
+that timer, the IR will stay off until the next command arrives.
+</p>
+
+<p>
+Also, in an attempt to weed out any confusing signals from natural IR sources
+in the environment, consumer IR devices are "pulsed" at a particular
+frequency.  So you're really turning a strobelight on and off, not just a
+flashlight.  When the receiver sees that the light is coming from a strobelight
+pulsing at the desired frequency, it can be assured that that signal came from
+an actual remote control.  The N900's device driver allows you to set the
+frequency anywhere between 20000 Hz and 500000 Hz.  38000 Hz seems to the most
+popular frequency used by modern remote controls, at least from what you find
+in LIRC config files.  Also, you can set how long each pulse needs to be held,
+in terms of a percentage: 25% means turning the light on for just one quarter
+of the pulse, 33% means leaving it on for one third, etc.  This is called the
+"duty cycle", and can be anywhere between 0 and 100 percent.  LIRC's default
+duty cycle is 50 percent.
+</p>
+
+<p>And that's about it.  I've been using a 
+<a href="http://svn.jacekowski.org/host_mode/trunk/drivers/input/lirc/lirc_rx51.c">web page</a>
+that lists the source code for the IR device driver.  I'm not sure if there's
+a better location out there for N900 source code, but this seems accurate
+so far.</p>
+
+<h3>You did <i>what</i> to the LIRC daemon?</h3>
+
+<p>
+Well, ok, yeah, I've cannibalized the transmission code out of the LIRC
+server and dumped it into my app.  Sort of.  I can't really keep my hands off
+of code once I've seen it, so I've rewritten it in C++, reorganizing it in
+an object-oriented manner along the way.</p>
+
+<p>
+As I have progressed in adding support for additional IR protocols, I'm
+beginning to see why the authors of the LIRC made the attempt to compress
+every possible IR protocol into a straightforward count of individual IR
+pulses.  The total number of IR protocols in use is amazing, and many of them
+(through oversight or due to the longevity of their use) are mind-numbingly
+complicated to deal with.  Still, I believe that separating the major protocols
+into their own code paths results in code that is easier to understand and
+maintain; I'm slowly moving away from the LIRC's system to my own as time
+goes on.
+</p>
+
+<p>
+In any case, I owe the LIRC authors a deep debt of gratitude for their
+efforts.  If you are one such author, thank you.  As Pierogi is more-or-less
+derived directly from their work, it is also licensed under the same terms,
+the GNU General Public License (GPL) version 2 or later.
+</p>
+
+<h2>Attribution</h2>
+
+<p>I've fallen in love with the Gentleface Mono Icon Set.  Of the creative
+commons icon sets available, theirs stands head and shoulders above the rest.
+Find their work at <a href="http://www.gentleface.com">www.gentleface.com</a>.
+
+<h2>References</h2>
+
+<p>A set of links to some resources I've used while writing the code.</p>
+
+<ul>
+<li>The center of the Linux infrared world, the
+<a href="http://www.lirc.org/">Linux Infrared Remote Control</a> project.
+
+<li>A <a href="http://en.wikipedia.org/wiki/Consumer_IR">Wiki page</a> with
+general info on consumer IR
+
+<li>A <a href="http://www.sbprojects.com/knowledge/ir/index.php">good introduction</a>
+to the theory and practice behind consumer IR devices
+
+<li>A <a href="http://en.wikipedia.org/wiki/RC-5">Wiki for the RC-5 protocol</a>
+
+<li>Some <a href="http://www.sbprojects.com/knowledge/ir/nec.php">Info on the NEC protocol</a>
+
+<li>Some <a href="http://www2.renesas.com/faq/en/mi_com/f_com_remo.html">More info on the NEC protocol</a>
+
+<li>An introduction to the <a href="http://www.sbprojects.com/knowledge/ir/sirc.php">Sony SIRC protocol</a>
+
+<li>An excellent collection of <a href="http://www.hifi-remote.com/sony/">Sony command codes</a>
+
+<li>An in-depth investigation of the <a href="http://www.adrian-kingston.com/IRFormatPioneer.htm">Pioneer IR Protocol</a>
+
+<li>Link to (what appears to be) source code for the N900's
+<a href="http://svn.jacekowski.org/host_mode/trunk/drivers/input/lirc/lirc_rx51.c">/dev/lirc0 device driver</a>.
+
+<ul>
+
+</body>
+</html>
