@@ -1,0 +1,9 @@
+<? xml version=1.0 ?>
+
+<macropack name="Factory Controls">
+
+ <macro name="Service Menu" button="macro1">
+  <send key="Service Menu"/>
+ </macro>
+
+</macropack>

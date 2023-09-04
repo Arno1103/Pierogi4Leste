@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<macropack name="Macro Test">
+
+ <macro name="Power Button" button="1" shortcut="A">
+  <send key="Power"/>
+ </macro>
+
+</macropack>

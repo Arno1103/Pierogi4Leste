@@ -1,0 +1,143 @@
+<? xml version=1.0 ?>
+
+<macropack name="Reverse Multitap">
+
+ <macro name="Multitap A" shortcut="A">
+  <send key="Two_Key"/>
+ </macro>
+
+ <macro name="Multitap B" shortcut="B">
+  <send key="Two_Key"/>
+  <send key="Two_Key"/>
+ </macro>
+
+ <macro name="Multitap C" shortcut="C">
+  <send key="Two_Key"/>
+  <send key="Two_Key"/>
+  <send key="Two_Key"/>
+ </macro>
+
+ <macro name="Multitap D" shortcut="D">
+  <send key="Three_Key"/>
+ </macro>
+
+ <macro name="Multitap E" shortcut="E">
+  <send key="Three_Key">
+  <send key="Three_Key">
+ </macro>
+
+ <macro name="Multitap F" shortcut="F">
+  <send key="Three_Key">
+  <send key="Three_Key">
+  <send key="Three_Key">
+ </macro>
+
+ <macro name="Multitap G" shortcut="G">
+  <send key="Four_Key">
+ </macro>
+
+ <macro name="Multitap H" shortcut="H">
+  <send key="Four_Key">
+  <send key="Four_Key">
+ </macro>
+
+ <macro name="Multitap I" shortcut="I">
+  <send key="Four_Key">
+  <send key="Four_Key">
+  <send key="Four_Key">
+ </macro>
+
+ <macro name="Multitap J" shortcut="J">
+  <send key="Five_Key">
+ </macro>
+
+ <macro name="Multitap K" shortcut="K">
+  <send key="Five_Key">
+  <send key="Five_Key">
+ </macro>
+
+ <macro name="Multitap L" shortcut="L">
+  <send key="Five_Key">
+  <send key="Five_Key">
+  <send key="Five_Key">
+ </macro>
+
+ <macro name="Multitap M" shortcut="M">
+  <send key="Six_Key">
+ </macro>
+
+ <macro name="Multitap N" shortcut="N">
+  <send key="Six_Key">
+  <send key="Six_Key">
+ </macro>
+
+ <macro name="Multitap O" shortcut="O">
+  <send key="Six_Key">
+  <send key="Six_Key">
+  <send key="Six_Key">
+ </macro>
+
+ <macro name="Multitap P" shortcut="P">
+  <send key="Seven_Key">
+ </macro>
+
+ <macro name="Multitap Q" shortcut="Q">
+  <send key="Seven_Key">
+  <send key="Seven_Key">
+ </macro>
+
+ <macro name="Multitap R" shortcut="R">
+  <send key="Seven_Key">
+  <send key="Seven_Key">
+  <send key="Seven_Key">
+ </macro>
+
+ <macro name="Multitap S" shortcut="S">
+  <send key="Seven_Key">
+  <send key="Seven_Key">
+  <send key="Seven_Key">
+  <send key="Seven_Key">
+ </macro>
+
+ <macro name="Multitap T" shortcut="T">
+  <send key="Eight_Key">
+ </macro>
+
+ <macro name="Multitap U" shortcut="U">
+  <send key="Eight_Key">
+  <send key="Eight_Key">
+ </macro>
+
+ <macro name="Multitap V" shortcut="V">
+  <send key="Eight_Key">
+  <send key="Eight_Key">
+  <send key="Eight_Key">
+ </macro>
+
+ <macro name="Multitap W" shortcut="W">
+  <send key="Nine_Key">
+ </macro>
+
+ <macro name="Multitap X" shortcut="X">
+  <send key="Nine_Key">
+  <send key="Nine_Key">
+ </macro>
+
+ <macro name="Multitap Y" shortcut="Y">
+  <send key="Nine_Key">
+  <send key="Nine_Key">
+  <send key="Nine_Key">
+ </macro>
+
+ <macro name="Multitap Z" shortcut="Z">
+  <send key="Nine_Key">
+  <send key="Nine_Key">
+  <send key="Nine_Key">
+  <send key="Nine_Key">
+ </macro>
+
+ <macro name="Multitap Space" shortcut=" ">
+  <send key="Zero_Key">
+ </macro>
+
+</macropack>
