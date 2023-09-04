@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Pierogi Remote Control</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QVBoxLayout" name="centralVerticalLayout"/>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuPierogi">
+    <property name="title">
+     <string>Pierogi</string>
+    </property>
+    <addaction name="actionSelect_Keyset_From_Favorites"/>
+    <addaction name="actionAutomatic_Keyset_Search"/>
+    <addaction name="actionSelectKeyset"/>
+    <addaction name="actionPreferences"/>
+    <addaction name="actionDocumentation"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuPierogi"/>
+  </widget>
+  <action name="actionSelectKeyset">
+   <property name="text">
+    <string>Select Keyset From List</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionDocumentation">
+   <property name="text">
+    <string>Documentation</string>
+   </property>
+  </action>
+  <action name="actionPreferences">
+   <property name="text">
+    <string>Preferences</string>
+   </property>
+  </action>
+  <action name="actionBrowse_Device_List">
+   <property name="text">
+    <string>Browse Partial Device List</string>
+   </property>
+  </action>
+  <action name="actionAutomatic_Keyset_Search">
+   <property name="text">
+    <string>Automated Keyset Search</string>
+   </property>
+  </action>
+  <action name="actionSelect_Keyset_From_Favorites">
+   <property name="text">
+    <string>Favorite Keysets</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+ <slots>
+  <signal>zeroEnabled(bool)</signal>
+  <signal>oneEnabled(bool)</signal>
+  <signal>twoEnabled(bool)</signal>
+  <signal>threeEnabled(bool)</signal>
+  <signal>fourEnabled(bool)</signal>
+  <signal>fiveEnabled(bool)</signal>
+  <signal>sixEnabled(bool)</signal>
+  <signal>sevenEnabled(bool)</signal>
+  <signal>eightEnabled(bool)</signal>
+  <signal>nineEnabled(bool)</signal>
+  <signal>powerEnabled(bool)</signal>
+  <signal>channelUpEnabled(bool)</signal>
+  <signal>channelDownEnabled(bool)</signal>
+  <signal>volumeUpEnabled(bool)</signal>
+  <signal>volumeDownEnabled(bool)</signal>
+  <signal>muteEnabled(bool)</signal>
+  <signal>clearEnabled(bool)</signal>
+  <signal>upEnabled(bool)</signal>
+  <signal>downEnabled(bool)</signal>
+  <signal>leftEnabled(bool)</signal>
+  <signal>rightEnabled(bool)</signal>
+  <signal>menuEnabled(bool)</signal>
+  <signal>enterEnabled(bool)</signal>
+  <signal>fastForwardEnabled(bool)</signal>
+  <signal>reverseEnabled(bool)</signal>
+  <signal>playEnabled(bool)</signal>
+  <signal>pauseEnabled(bool)</signal>
+  <signal>stopEnabled(bool)</signal>
+  <signal>inputEnabled(bool)</signal>
+  <signal>prevChannelEnabled(bool)</signal>
+  <signal>captionsEnabled(bool)</signal>
+  <signal>exitEnabled(bool)</signal>
+  <signal>infoEnabled(bool)</signal>
+  <signal>guideEnabled(bool)</signal>
+  <signal>keysetNameChanged(QString)</signal>
+  <signal>previousEnabled(bool)</signal>
+  <signal>nextEnabled(bool)</signal>
+  <signal>replayEnabled(bool)</signal>
+  <signal>advanceEnabled(bool)</signal>
+  <signal>stepBackEnabled(bool)</signal>
+  <signal>stepForwardEnabled(bool)</signal>
+  <signal>pipEnabled(bool)</signal>
+  <signal>pipSwapEnabled(bool)</signal>
+  <signal>sleepEnabled(bool)</signal>
+  <signal>ejectEnabled(bool)</signal>
+  <signal>redEnabled(bool)</signal>
+  <signal>greenEnabled(bool)</signal>
+  <signal>yellowEnabled(bool)</signal>
+  <signal>blueEnabled(bool)</signal>
+  <signal>keysetMakeChanged(QString)</signal>
+  <signal>plusOneHundredEnabled(bool)</signal>
+  <signal>dashEnabled(bool)</signal>
+  <signal>doubleDigitEnabled(bool)</signal>
+  <signal>surroundEnabled(bool)</signal>
+  <signal>selectEnabled(bool)</signal>
+  <signal>aspectRatioEnabled(bool)</signal>
+  <signal>audioEnabled(bool)</signal>
+  <signal>favoritesEnabled(bool)</signal>
+  <signal>pipMoveEnabled(bool)</signal>
+  <signal>pipSourceEnabled(bool)</signal>
+  <signal>programEnabled(bool)</signal>
+  <signal>pictureModeEnabled(bool)</signal>
+  <signal>discTitleEnabled(bool)</signal>
+  <signal>discMenuEnabled(bool)</signal>
+  <signal>discSelectEnabled(bool)</signal>
+  <signal>trackingPlusEnabled(bool)</signal>
+  <signal>trackingMinusEnabled(bool)</signal>
+  <signal>autoTrackingEnabled(bool)</signal>
+  <signal>vhsSpeedEnabled(bool)</signal>
+  <signal>soundModeEnabled(bool)</signal>
+  <signal>pageUpEnabled(bool)</signal>
+  <signal>pageDownEnabled(bool)</signal>
+  <signal>slowEnabled(bool)</signal>
+  <signal>slowMinusEnabled(bool)</signal>
+  <signal>slowPlusEnabled(bool)</signal>
+  <signal>tunerBandEnabled(bool)</signal>
+  <signal>repeatEnabled(bool)</signal>
+  <signal>repeatABEnabled(bool)</signal>
+  <signal>randomEnabled(bool)</signal>
+  <signal>liveTVEnabled(bool)</signal>
+  <signal>teletextEnabled(bool)</signal>
+  <signal>teletextHoldEnabled(bool)</signal>
+  <signal>teletextRevealEnabled(bool)</signal>
+  <signal>teletextSizeEnabled(bool)</signal>
+  <signal>pipChannelUpEnabled(bool)</signal>
+  <signal>pipChannelDownEnabled(bool)</signal>
+  <signal>pipPauseEnabled(bool)</signal>
+  <signal>pipSizeEnabled(bool)</signal>
+ </slots>
+</ui>
